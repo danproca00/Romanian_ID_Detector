@@ -27,9 +27,6 @@ plt.figure(figsize=(10, 15))
 plt.imshow(image, cmap='gray', vmin=0, vmax=255)
 plt.show()
 
-import re
-
-
 text = pytesseract.image_to_string(image)
 
 # Regular expressions to search for desired items
